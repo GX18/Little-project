@@ -82,6 +82,12 @@ function Slide(id) {
 new Slide('slide');
 
 document.getElementById("anwser").addEventListener("click", () => {
+if (currentQuestion<data.length) {
   ++currentQuestion;
-  render(data[currentQuestion].question, data[currentQuestion]["a1"],0)
+  render(data[currentQuestion].question, data[currentQuestion]["a1"],0);
+} else {
+  var htmlArray = ["ear.html","ju.html", "mer.html", "mo.html", "nep.html", "personality.html", "plu.html", "sunny.html", "ven.html", "sa.html", "ura.html", "roid.html"];
+  var rand = htmlArray[Math.floor(Math.random() * htmlArray.length)];
+  location.href = rand;
+}
 })
