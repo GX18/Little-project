@@ -17,9 +17,6 @@ function render(question, anwser, child) {
   } else if(child==4) {
     document.getElementById("slide-item").style.backgroundImage = "linear-gradient(to right top, #8cc4fe, #4ea2ff, #007dff, #0054f6, #2913e1)";
   }
-
-  
-
 }
 
 

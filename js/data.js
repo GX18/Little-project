@@ -9,7 +9,7 @@ data = [
     },
 
     {
-        question: "You are lost in side a forest and you meet a pathway, which path do you choose?",
+        question: "You are lost inside a forest and you meet a pathway, which path do you choose?",
         a1: "The route towards the castle",
         a2: "The route towards the sea",
         a3: "The route towards the jungle",
