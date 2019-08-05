@@ -8,7 +8,7 @@ function render(question, anwser, child) {
   if(child==0){
     document.getElementById("slide-item").style.backgroundImage = "linear-gradient(to right top, #ffb88a, #fc9f6e, #fa8456, #f66542, #f23e33)";
   } else if (child==1) {
-    document.getElementById("slide-item").style.backgroundImage = "linear-gradient(to right top, #ffb88a, #fc9f6e, #fa8456, #f66542, #f23e33)";
+    document.getElementById("slide-item").style.backgroundImage = "linear-gradient(to right top, #3a70bb, #3f63bf, #5153bf, #673fb9, #7e1bae)";
   } else if(child==2){
     document.getElementById("slide-item").style.backgroundImage = "linear-gradient(to right top, #9accff, #a2c2f3, #a8b9e6, #aab0d8, #aba8ca)";
     
