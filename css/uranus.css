@@ -163,10 +163,13 @@
 
     }
 
-    #inner-top h5 {
+    #inner-top a {
         margin-top: 20px;
         font-family: 'Indie Flower', cursive;
     }
+    #inner-top a:hover{
+        text-decoration: underline;
+    };
 
     #inner-top h1 {
         font-size: 2.5rem;
