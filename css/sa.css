@@ -9,10 +9,9 @@ body {
     left: 0;
     width: 100%;
     height: 50px;
-    background: #008B8B;
+    background: #03033a;
     z-index: 5;
-    box-shadow: 0 0 3px 3px #008B8B;
-    overflow: hidden;
+    box-shadow: 0 0 3px 3px #03033a;
   }
   .nav a {
     float: left;
@@ -44,13 +43,13 @@ body {
     background-position: center;
   }
   .fixed-bg .img#bg-1 {
-    background-image: url(https://images.unsplash.com/photo-1489447068241-b3490214e879?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    background-image: url(https://images.unsplash.com/photo-1537212943258-f11cd2fb13c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
   }
   .fixed-bg .img#bg-2 {
-    background-image: url(https://images.unsplash.com/photo-1521762849825-1dc1dda29785?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1412&q=80);
+    background-image: url(https://images.unsplash.com/photo-1508020963102-c6c723be5764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
   }
   .fixed-bg .img#bg-3 {
-    background-image: url(https://images.unsplash.com/photo-1482263231623-6121096b0d3f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    background-image: url(https://images.unsplash.com/photo-1523521384060-d1bdc9e477b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
   }
   .fixed-bg .img.visible {
     opacity: 1;
@@ -59,7 +58,7 @@ body {
   .hero {
     width: 100%;
     height: 80vh;
-    background: url(https://images.unsplash.com/photo-1529515244555-c2d86b8fad59?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80) center;
+    background: url(https://images.unsplash.com/photo-1497294815431-9365093b7331?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80) center;
     position: relative;
     text-align: center;
     background-attachment: fixed;
@@ -84,13 +83,13 @@ body {
   }
   
   .features {
-    background: #008B8B ;
+    background: #03033a ;
     background-size: 50%;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
   }      
   
   #image1 {
-    background-image: url(http://www.clker.com/cliparts/Q/I/V/k/y/2/black-basketball-hi.png);
+    background-image: url(http://www.clker.com/cliparts/f/0/c/e/1195437176254179873johnny_automatic_two_mushrooms.svg.med.png);
     height: 390px;
     background-repeat: no-repeat;
     background-size: 170px;
@@ -99,21 +98,21 @@ body {
   }
   
   #image2 {
-    background-image: url(http://www.clker.com/cliparts/w/M/G/E/c/F/hand-shake-md.png);
+    background-image: url(http://www.clker.com/cliparts/p/S/D/m/Y/B/blue-shark-md.png);
     height: 390px;
     background-repeat: no-repeat;
     background-size: 170px;
     background-position-x: 51%;
-    background-position-y: 170px;
+    background-position-y: 200px;
   }
   
   #image3 {
-    background-image: url(http://www.clker.com/cliparts/Y/L/2/I/l/5/bike-rider-md.png);
+    background-image: url(http://www.clker.com/cliparts/d/c/f/8/11954440891492798707liftarn_Human_skull_2.svg.med.png);
     height: 390px;
     background-repeat: no-repeat;
-    background-size: 170px;
-    background-position-x: 83%;
-    background-position-y: 170px;
+    background-size: 130px;
+    background-position-x: 80%;
+    background-position-y: 140px;
   }
   
   
@@ -123,7 +122,7 @@ body {
     font-size: 25px;
     font-weight: 500;
     /* font-family: 'Work Sans', sans-serif; */
-    padding-left: 270px;
+    padding-left: 300px;
     padding-bottom: 100px;
     color: #fff; 
     /* font-family: 'Unna', serif; */
@@ -277,4 +276,65 @@ body {
     background-size: 170px;
     background-position-x: 83%;
     background-position-y: 170px;
+  }
+
+
+  #planet {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+  }
+
+  #person {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 50px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 1;
+    font-size: 1.5rem;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
   }
