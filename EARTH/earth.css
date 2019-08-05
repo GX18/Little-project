@@ -1,0 +1,280 @@
+body {
+    color: #000;
+    font-family: 'Roboto', Arial, sans-serif;
+  }
+  
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #006633;
+    z-index: 5;
+    box-shadow: 0 0 3px 3px #006633;
+    overflow: hidden;
+  }
+  .nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+  }
+  
+  .fixed-bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .fixed-bg .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+  }
+  .fixed-bg .img#bg-1 {
+    background-image: url(https://images.unsplash.com/photo-1445887374063-34abd495852c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1706&q=80);
+  }
+  .fixed-bg .img#bg-2 {
+    background-image: url(https://images.unsplash.com/17/unsplash_5261cd0183e57_1.JPG?ixlib=rb-1.2.1&auto=format&fit=crop&w=1649&q=80);
+  }
+  .fixed-bg .img#bg-3 {
+    background-image: url(https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80);
+  }
+  .fixed-bg .img.visible {
+    opacity: 1;
+  }
+  
+  .hero {
+    width: 100%;
+    height: 80vh;
+    background: url(https://images.unsplash.com/photo-1453791052107-5c843da62d97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80) center;
+    position: relative;
+    text-align: center;
+    background-attachment: fixed;
+  }
+  .hero .wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+  .hero h1 {
+    font-size: 100px;
+    font-weight: 900;
+    margin-bottom: 25px;
+    font-family: 'Adamina', serif;
+  }
+  .hero h2 {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Courgette', cursive;
+  }
+  
+  .features {
+    background: #006633 ;
+    background-size: 50%;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+  }      
+  
+  #image1 {
+    background-image: url(http://www.clker.com/cliparts/d/c/a/2/11949843562058740961world_map_saint_.svg.med.png);
+    height: 390px;
+    background-repeat: no-repeat;
+    background-size: 170px;
+    background-position-x: 20%;
+    background-position-y: 170px;
+  }
+  
+  #image2 {
+    background-image: url(http://www.clker.com/cliparts/w/M/G/E/c/F/hand-shake-md.png);
+    height: 390px;
+    background-repeat: no-repeat;
+    background-size: 170px;
+    background-position-x: 51%;
+    background-position-y: 170px;
+  }
+  
+  #image3 {
+    background-image: url(http://www.clker.com/cliparts/d/d/0/8/1194984712347057850bamboo_danny_allen_r.svg.med.png);
+    height: 390px;
+    background-repeat: no-repeat;
+    background-size: 170px;
+    background-position-x: 78%;
+    background-position-y: 170px;
+  }
+  
+  
+   
+  
+  .features h2{
+    font-size: 25px;
+    font-weight: 500;
+    /* font-family: 'Work Sans', sans-serif; */
+    padding-left: 250px;
+    padding-bottom: 100px;
+    color: #fff; 
+    /* font-family: 'Unna', serif; */
+    font-family: 'Adamina', serif;
+  }
+  
+  
+  
+  .content {
+    position: relative;
+    z-index: 2;
+  }
+  .content .slides {
+    position: relative;
+  }
+  .content .slides .menu {
+    position: fixed;
+    right: 30px;
+    transition: top 0s linear;
+    z-index: 5;
+    top: 0;
+    opacity: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .content .slides .menu.visible {
+    opacity: 1;
+  }
+  .content .slides .menu a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #000;
+    text-indent: -99999px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .content .slides .menu a.active {
+    background: #fff;
+  }
+  .content .slides .slide {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  .content .slides .slide .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.45);
+    padding: 50px;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+  }
+  .content .slides .slide .wrapper.visible {
+    opacity: 1;
+  }
+  .content .slides .slide h1 {
+    font-size: 40px;
+    line-height: 35px;
+    margin-bottom: 25px;
+    font-family: 'Adamina', serif;
+  
+  }
+  .content .slides .slide p {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'Courgette', cursive;
+  }
+  .content .footer {
+    height: 700px;
+    background: #660000;
+    background-size: cover;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+    padding-top: 100px;
+    font-size: 30px;
+    font-family: 'Shadows Into Light', cursive;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+     /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    width: 300px;
+    top: 50px;
+    left: 50%; 
+    font-size: 20px;
+    font-family: 'Unna', serif;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+  
+  #image4 {
+    background-image: url(http://www.clker.com/cliparts/Q/I/V/k/y/2/black-basketball-hi.png);
+    height: 390px;
+    background-repeat: no-repeat;
+    background-size: 170px;
+    background-position-x: 20%;
+    background-position-y: 170px;
+  }
+  
+  #image5 {
+    background-image: url(http://www.clker.com/cliparts/w/M/G/E/c/F/hand-shake-md.png);
+    height: 390px;
+    background-repeat: no-repeat;
+    background-size: 170px;
+    background-position-x: 51%;
+    background-position-y: 170px;
+  }
+  
+  #image6 {
+    background-image: url(http://www.clker.com/cliparts/Y/L/2/I/l/5/bike-rider-md.png);
+    height: 390px;
+    background-repeat: no-repeat;
+    background-size: 170px;
+    background-position-x: 83%;
+    background-position-y: 170px;
+  }

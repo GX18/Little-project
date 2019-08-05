@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scrolling Slide Views</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+<link rel='stylesheet' href='http://weloveiconfonts.com/api/?family=fontawesome'>
+
+      <link rel="stylesheet" href="./mer.css">
+
+  
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Adamina&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Unna&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <div class="fixed-bg">
+  <div id="bg-1" class="img visible"></div>
+  <div id="bg-2" class="img"></div>
+  <div id="bg-3" class="img"></div>
+</div>
+<div class="nav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">Planets</a>
+    <a href="#contact">Personality</a>
+    <a href="#about">About</a>
+</div>
+<div class="content">
+  <div class="hero">
+    <div class="wrapper">
+      <h1>MERCURY</h1>
+      <h2>Tranquil, Patient, Reliable</h2>
+    </div>
+  </div>
+  <div class="features">
+    <div id="image1">
+      <div id="image2">
+        <div id="image3"></div>
+      </div>
+    </div>
+    <h2 class="tooltip">Tranquil
+      <span class="tooltiptext">Calm and peaceful, free from turmoil or agitation of mind</span>
+    </h2>
+    <h2 class="tooltip">Patient
+      <span class="tooltiptext">Manifesting forbearance under pressure or pain</span>
+    </h2>
+    <h2 class="tooltip">Reliable
+        <span class="tooltiptext">The source, the mother, the sea, the water</span>
+    </h2>
+  </div>
+  <div class="slides">
+    <ul class="menu">
+      <li><a href="#slide-1" class="bg-1 dot">Slide 1</a></li>
+      <li><a href="#slide-2" class="bg-2 dot">Slide 2</a></li>
+      <li><a href="#slide-3" class="bg-3 dot">Slide 3</a></li>
+    </ul>
+    <div class="slide" data-bg="bg-1" id="slide-1">
+      <div class="wrapper">
+        <h1>INTRODUCTION</h1>
+        <p> Mercury - the planet of freedom and tranquility, gasps the breath of its beweilders with is calm and laidback demeanor. Yet, touching the heart of Mercurry, fire is ignited and storm is provoked.</p>
+        <br>
+        <p> Like Mercury, its weilder of personality is a tsundere! Breaking their cold and hard facade, a soft core, hot and passionate heart is exposed. Looking at life in a analytic perspective, a Mercury will do wonders to you.</p>
+
+      </div>
+    </div>
+    <div class="slide" data-bg="bg-2" id="slide-2">
+      <div class="wrapper">
+        <h1>QUIRKS</h1>
+        <p> Cold-headed: They are cold headed. Kind but straightforward. They look at our world in the eyes of a bussinessman, trying to crack it open and take out every core to analyse it. Careful and intricate. Amazing detectives and detectors.  </p>
+        <br>
+        <p> Strategic head: They fight in the back. Pens and papers are their weapons and hearts are their guidance. Making up detalied plans that put enemies to shame. With Mars, they make up the best companions. </p>
+        <br>
+        <p> Sweerheart: Cracking their surface and you get the soft core. They are our darlings, our cinnamon roll. Just like how hot Mercury is despite its calm surface, expect your Mercury to be the same!  </p>
+      </div>
+    </div>
+    <div class="slide" data-bg="bg-3" id="slide-3">
+      <div class="wrapper">
+        <h1>Weakenesses and Overcoming</h1>
+        <p>Misunderstanding: Put down the mask, Mercury. Be open, be true, be more vulnerable, the suns won't hurt you anymore. Open your heart, and love will open to you.</p>
+        <br>
+        <p>Too strict: Soften your self. Mercury is the first planet of its all in the solar system, so like its weilder, they tend to think overage. Sometimes, this is not good! Be childish and be soft. You don't have to be the big brother/sister all the time.</p>
+        <br>
+        <p>Insecurity: Accumulating all the pain and hatred, you have insecure Mercury. Sensitive to their surroundings, Mercury will find it depressing to get over the ungrateful remarks. Yet, in the end, it's important to remember that you are beautiful. </p>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="footer">
+    <div>
+      <h1>FUN FACT</h1>
+    </div>
+  </div> -->
+</div>
+  <script src='http://cdn.rawgit.com/google/closure-library/master/closure/goog/base.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="./mer.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+        });
+        </script>
+
+
+
+
+</body>
+
+</html>

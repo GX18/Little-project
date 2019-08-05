@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scrolling Slide Views</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+<link rel='stylesheet' href='http://weloveiconfonts.com/api/?family=fontawesome'>
+
+      <link rel="stylesheet" href="./jupiter.css">
+
+  
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Adamina&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Unna&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <div class="fixed-bg">
+  <div id="bg-1" class="img visible"></div>
+  <div id="bg-2" class="img"></div>
+  <div id="bg-3" class="img"></div>
+</div>
+<div class="nav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">Planets</a>
+    <a href="#contact">Personality</a>
+    <a href="#about">About</a>
+</div>
+<div class="content">
+  <div class="hero">
+    <div class="wrapper">
+      <h1>JUPITER</h1>
+      <h2>Sincere, Humble, Courteous</h2>
+    </div>
+  </div>
+  <div class="features">
+    <div id="image1">
+      <div id="image2">
+        <div id="image3"></div>
+      </div>
+    </div>
+    <h2 class="tooltip">Sincere
+      <span class="tooltiptext">Stay true to your hearth and spirit</span>
+    </h2>
+    <h2 class="tooltip">Humble
+      <span class="tooltiptext">Look at you, and you alone</span>
+    </h2>
+    <h2 class="tooltip">Courteous
+        <span class="tooltiptext">Polite and friendly. Can you wish for more?</span>
+    </h2>
+  </div>
+  <div class="slides">
+    <ul class="menu">
+      <li><a href="#slide-1" class="bg-1 dot">Slide 1</a></li>
+      <li><a href="#slide-2" class="bg-2 dot">Slide 2</a></li>
+      <li><a href="#slide-3" class="bg-3 dot">Slide 3</a></li>
+    </ul>
+    <div class="slide" data-bg="bg-1" id="slide-1">
+      <div class="wrapper">
+        <h1>INTRODUCTION</h1>
+        <p> Jupiter - the brother, the big sister, the leader of our squad in the solar system. And it might take a lot of effort to withstand such fame</p>
+        <br>
+        <p> Like Jupiter, its weilder of personality is the kindest of them all. They belong to the heart, kind and humble, with a smile always splatterd on their face. But beware, what is under that facade? The truth, or the lie? </p>
+
+      </div>
+    </div>
+    <div class="slide" data-bg="bg-2" id="slide-2">
+      <div class="wrapper">
+        <h1>QUIRKS</h1>
+        <p> Big smile: Put on a big smile and make everyone happy! You are the big brother, the caregiver, the one in charge of all this little kids. You don't need to be bright and cheerful like Sun or Mars, just your kindness can fill them all </p>
+        <br>
+        <p> Great cook! Great garderner: Good at everything. You are the Jacks of All Trades. Staying with a Jupiter, your stomach will be full, your dream will be fetched, your thist will be quenched.</p>
+        <br>
+        <p> Companion: They will support you. That's why Jupiter has so many moons! Because they are attractive in their own ways.  </p>
+      </div>
+    </div>
+    <div class="slide" data-bg="bg-3" id="slide-3">
+      <div class="wrapper">
+        <h1>Weakenesses and Overcoming</h1>
+        <p>No weakness: No weakness! You are inevitable. But maybe, that what makes you weak. Because you will always be relied on. People soon take advantage of you, and will use you for their own goods.</p>
+        <br>
+        <p>Uncontrolled emotion: Big brother. But what hides inside the storm? Jupiter is no rock planet. They are made of cloud, storms and sands. Going deep into the, all you see is emotion submerging everywhere. It's time to calm down the storm once again </p>
+        <br>
+        <p> Intimidation: Jupiter are often so big. So huge and enormous. They might intimidate fellows and friends. But remember, even a bear has its soft spot. </p>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="footer">
+    <div>
+      <h1>FUN FACT</h1>
+    </div>
+  </div> -->
+</div>
+  <script src='http://cdn.rawgit.com/google/closure-library/master/closure/goog/base.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="./jupiter.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+        });
+        </script>
+
+
+
+
+</body>
+
+</html>

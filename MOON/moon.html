@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scrolling Slide Views</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+<link rel='stylesheet' href='http://weloveiconfonts.com/api/?family=fontawesome'>
+
+      <link rel="stylesheet" href="./moon.css">
+
+  
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Adamina&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Unna&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <div class="fixed-bg">
+  <div id="bg-1" class="img visible"></div>
+  <div id="bg-2" class="img"></div>
+  <div id="bg-3" class="img"></div>
+</div>
+<div class="nav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">Planets</a>
+    <a href="#contact">Personality</a>
+    <a href="#about">About</a>
+</div>
+<div class="content">
+  <div class="hero">
+    <div class="wrapper">
+      <h1>MOON</h1>
+      <h2>Disclosed, Generous, Unrequited</h2>
+    </div>
+  </div>
+  <div class="features">
+    <div id="image1">
+      <div id="image2">
+        <div id="image3"></div>
+      </div>
+    </div>
+    <h2 class="tooltip">Disclosed
+      <span class="tooltiptext">Your heart is filled with secrecy</span>
+    </h2>
+    <h2 class="tooltip"> Generous
+      <span class="tooltiptext">Give it all, bring it all</span>
+    </h2>
+    <h2 class="tooltip">Unrequited
+        <span class="tooltiptext">Unrequited love hurts, does it?</span>
+    </h2>
+  </div>
+  <div class="slides">
+    <ul class="menu">
+      <li><a href="#slide-1" class="bg-1 dot">Slide 1</a></li>
+      <li><a href="#slide-2" class="bg-2 dot">Slide 2</a></li>
+      <li><a href="#slide-3" class="bg-3 dot">Slide 3</a></li>
+    </ul>
+    <div class="slide" data-bg="bg-1" id="slide-1">
+      <div class="wrapper">
+        <h1>INTRODUCTION</h1>
+        <p> Moon. Do you know about it? Yes you do. It is everywhere. Every steps you take, you see the, every night you sleep, you see it. The moon is yours, yours alone.</p>
+        <br>
+        <p> Like Moon, its weilder of personality is just like a secret admirer. They are silent, disclosed and supportive. Being with a Moon, you will never be afraid to get lost, because they are there for you. </p>
+
+      </div>
+    </div>
+    <div class="slide" data-bg="bg-2" id="slide-2">
+      <div class="wrapper">
+        <h1>QUIRKS</h1>
+        <p> Supportive: They are always there. By your side, support you and love you. Like the dazzling light of the moon, not bright but shining enough to illuminate the sky, Moon's heart guides your way through the darkest tunnel, lend their heart and trust.  </p>
+        <br>
+        <p> Motherly: In a group, there will always be a mother figure. The one that lend us all, that stand up in times of need. Moon is our mother. They take care of us, love us, deeply and unrequitedly.</p>
+        <br>
+        <p> Sacrifice: A moon always follows its earth. All years round, they just watch it over, and weild all the external factors to protect them from the galaxy. They sacrifice, and give it to others, without expecting anything in return.  </p>
+      </div>
+    </div>
+    <div class="slide" data-bg="bg-3" id="slide-3">
+      <div class="wrapper">
+        <h1>Weakenesses and Overcoming</h1>
+        <p>Unrequited love: Love but never reach. Sacrificial but silent, they keep their heart tender and secret, making barriers so that no one can know. Their love is only from a far, so the replies is also far-fetched.</p>
+        <br>
+        <p>Timid: Overshown by the beauty of Earth, or the brightness of Sun, they become timid, or even pessimistic. However, their friends cheer them up, and they don't become the second Pluto. </p>
+        <br>
+        <p>Lonely: Remember, sometimes, seperation is not the key. Don't run, don't chase. Just be there, and everyone will come to you, just like the way you come to them. A mother can be forgotten now, but will never be erased.  </p>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="footer">
+    <div>
+      <h1>FUN FACT</h1>
+    </div>
+  </div> -->
+</div>
+  <script src='http://cdn.rawgit.com/google/closure-library/master/closure/goog/base.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="./moon.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+        });
+        </script>
+
+
+
+
+</body>
+
+</html>

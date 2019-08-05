@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scrolling Slide Views</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+<link rel='stylesheet' href='http://weloveiconfonts.com/api/?family=fontawesome'>
+
+      <link rel="stylesheet" href="./nep.css">
+
+  
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Adamina&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Unna&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <div class="fixed-bg">
+  <div id="bg-1" class="img visible"></div>
+  <div id="bg-2" class="img"></div>
+  <div id="bg-3" class="img"></div>
+</div>
+<div class="nav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">Planets</a>
+    <a href="#contact">Personality</a>
+    <a href="#about">About</a>
+</div>
+<div class="content">
+  <div class="hero">
+    <div class="wrapper">
+      <h1>NEPTUNE</h1>
+      <h2>Enchanting, Harmonious, Versatile</h2>
+    </div>
+  </div>
+  <div class="features">
+    <div id="image1">
+      <div id="image2">
+        <div id="image3"></div>
+      </div>
+    </div>
+    <h2 class="tooltip">Enchanting
+      <span class="tooltiptext">That feeling of attraction and alluration at the same time</span>
+    </h2>
+    <h2 class="tooltip">Harmonious
+      <span class="tooltiptext">In sync</span>
+    </h2>
+    <h2 class="tooltip"> Versatile </h2>
+        <span class="tooltiptext"></span>
+    </h2>
+  </div>
+  <div class="slides">
+    <ul class="menu">
+      <li><a href="#slide-1" class="bg-1 dot">Slide 1</a></li>
+      <li><a href="#slide-2" class="bg-2 dot">Slide 2</a></li>
+      <li><a href="#slide-3" class="bg-3 dot">Slide 3</a></li>
+    </ul>
+    <div class="slide" data-bg="bg-1" id="slide-1">
+      <div class="wrapper">
+        <h1>INTRODUCTION</h1>
+        <p> Neptune - deep as sea and blue as ocean - the planet of depth and beauty, gasping the mircale of solar system in its own hand</p>
+        <br>
+        <p> Like Neptune, its weilder of personality is a such a wonder to this world. They lure us with their beauty, talentedness and leave us gasp in awe. A Neptune has its depth and its width, stretching its glamorous beauty throughout the entire galaxy.</p>
+      </div>
+    </div>
+    <div class="slide" data-bg="bg-2" id="slide-2">
+      <div class="wrapper">
+        <h1>QUIRKS</h1>
+        <p> Multi-talented: As Neptune, Neptuner tends to be multi-tasked. They excel at many things in one, and polish each tasks perfectly. In short, they are perfectionist! Leaving matters at their hands and you will never be worried. </p>
+        <br>
+        <p> An Artist: Beautiful as its mother planet, Neptuners bear an undying love for arts. No matter which form, arts will always have its soft spots in Neptune's profession. Their talent, together with their creativity, created masterpieces. </p>
+        <br>
+        <p> The reconcilation: Having a war? Neptune is there. Like Earth, they dislike peace. They want justice and rights to be done right. However, Neptuners are not risk-takers. They approach matters in a careful demeanour, enabling the 'victims' to get accustomed to them first.  </p>
+      </div>
+    </div>
+    <div class="slide" data-bg="bg-3" id="slide-3">
+      <div class="wrapper">
+        <h1>Weakenesses and Overcoming</h1>
+        <p>Over-critical: Being too perfect might pose a problem to Neptune. They will overcritize or overestimate a problem, creating turbulence among their friendship and lovelife. Expect things to have its flaws, drawbacks and downfalls!</p>
+        <br>
+        <p>Strenous: Don't put such a high standard on your self. People expect you to be flawed, not flawless, and flaws also make one distinguished. </p>
+        <br>
+        <p>Dreams: Don't be afraid and follow your dream! Neptune are realistic. They think with their mind not their heart, so sometimes decisions are made with regrets. Be more willing to take risks. Risks make success. </p>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="footer">
+    <div>
+      <h1>FUN FACT</h1>
+    </div>
+  </div> -->
+</div>
+  <script src='http://cdn.rawgit.com/google/closure-library/master/closure/goog/base.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="./nep.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+        });
+        </script>
+
+
+
+
+</body>
+
+</html>

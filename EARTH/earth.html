@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scrolling Slide Views</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+<link rel='stylesheet' href='http://weloveiconfonts.com/api/?family=fontawesome'>
+
+      <link rel="stylesheet" href="./earth.css">
+
+  
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Adamina&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Unna&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <div class="fixed-bg">
+  <div id="bg-1" class="img visible"></div>
+  <div id="bg-2" class="img"></div>
+  <div id="bg-3" class="img"></div>
+</div>
+<div class="nav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">Planets</a>
+    <a href="#contact">Personality</a>
+    <a href="#about">About</a>
+</div>
+<div class="content">
+  <div class="hero">
+    <div class="wrapper">
+      <h1>EARTH</h1>
+      <h2>Down-to-earth, lovable, naive</h2>
+    </div>
+  </div>
+  <div class="features">
+    <div id="image1">
+      <div id="image2">
+        <div id="image3"></div>
+      </div>
+    </div>
+    <h2 class="tooltip">Down-to-earth
+      <span class="tooltiptext">Straight-forward earthy~</span>
+    </h2>
+    <h2 class="tooltip">Lovable
+      <span class="tooltiptext">Our cinnamon roll</span>
+    </h2>
+    <h2 class="tooltip">Naive
+        <span class="tooltiptext">Full of imagination and ideas</span>
+    </h2>
+  </div>
+  <div class="slides">
+    <ul class="menu">
+      <li><a href="#slide-1" class="bg-1 dot">Slide 1</a></li>
+      <li><a href="#slide-2" class="bg-2 dot">Slide 2</a></li>
+      <li><a href="#slide-3" class="bg-3 dot">Slide 3</a></li>
+    </ul>
+    <div class="slide" data-bg="bg-1" id="slide-1">
+      <div class="wrapper">
+        <h1>INTRODUCTION</h1>
+        <p> Earth - our home, our place, our belonging. The route of life, energy and organisms. </p>
+        <br>
+        <p> Like Earth, its weilder of personality is down-to-earth. Loved by everyone, followed by everyone, the perfect planet. Always full of imagination and difference that set them aside.</p>
+
+      </div>
+    </div>
+    <div class="slide" data-bg="bg-2" id="slide-2">
+      <div class="wrapper">
+        <h1>QUIRKS</h1>
+        <p> Open-minded: Susceptible to new things and adventure. Earth is adventurous. They live to tell the tales. They are the protagonists.  </p>
+        <br>
+        <p> The peace-maker: They don't like wars. They love peace. They love the tranquility just like their planets have. They love nature and animals. Justice and rights.</p>
+        <br>
+        <p> The campaginer: They set the change. Imagination is their tool, and courage is their strength. Never afraid and never hesitate.  </p>
+      </div>
+    </div>
+    <div class="slide" data-bg="bg-3" id="slide-3">
+      <div class="wrapper">
+        <h1>Weakenesses and Overcoming</h1>
+        <p>Vulenerable: Earth is naive. They are carefree, a little bit of childishness, and they are not afraid. Because they are too protected, they don't know much about this world, and build it up within their little imaginary kingdom.</p>
+        <br>
+        <p>Too brave: They are the heros. They are the Fool. But no fool are like them. They head themselves into danger because they think it's intriguing, they head themselves into trouble because they think it's thrilled.  </p>
+        <br>
+        <p>Taken advantage: Protect our Earth. Because it's vulnerable, it's easily bullied. Protect the green and the innocence that every other planets strive to weild. </p>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="footer">
+    <div>
+      <h1>FUN FACT</h1>
+    </div>
+  </div> -->
+</div>
+  <script src='http://cdn.rawgit.com/google/closure-library/master/closure/goog/base.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="./earth.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+        });
+        </script>
+
+
+
+
+</body>
+
+</html>
