@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/saturn.css">
+    <title>Explore Saturn</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Indie+Flower|Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="root">
+        <div id="outer-top">
+
+            <div id="inner-top">
+                <div></div>
+                <h5>username</h5>
+                <h1>Explore Saturn</h1>
+                <div class="inline">
+                    <span >A brief introduction to your planet</span>
+                    <span class="right">to the one who is kind-hearted</span>
+                </div>
+            </div>
+            <div id="inner-bottom">
+                
+                <div class="table-info" id="menu-top">
+                    <div id="menu">menu page</div>
+                    <span>01</span>
+                    <div>
+                        <button href="#" onclick = "return false;" onmousedown="autoScrollTo('box-border');" class="table">introduction</button>
+
+                    </div>
+                    <span class="paddingtop-25px">Explore</span>
+
+                </div>
+                <div class="table-info" id="menu-mid">
+                    <span class="paddingtop-25px">02</span>
+                    <div>
+                        <button href="#" onclick = "return false;" onmousedown="autoScrollTo('exploration');" class="table">exploration</button>
+
+                    </div>
+                    <span class="paddingtop-50px">read more</span>
+                </div>
+                <div class="table-info" id="menu-bot">
+                    <span class="paddingtop-25px">03</span>
+                    <div>
+                        
+                        <button href="#" onclick = "return false;" onmousedown="autoScrollTo('culture');" class="table">culture</button>
+                    </div>
+                    <span class="paddingtop-50px">read more</span>
+                </div>
+            </div>
+        </div>
+
+
+    <div id="model-3d">
+        <h3>3D model</h3>
+        <iframe src="https://solarsystem.nasa.gov/gltf_embed/2355" width="90%" height="450px" frameborder="0"></iframe>
+        <h4>source: NASA Visualization Technology Applications and Development (VTAD)</h4>
+    </div>
+
+        </div id="background-page">
+
+            <div class="background-box" id="box-border">
+                <div class="paddingleft-70px">introduciton</div>
+                <div id="introduction">
+                    <div id="intro-info">
+                        <div class="box tooltip">
+                            In dim light
+                            <div class="tooltiptext">Saturn is the sixth planet from our Sun (a star) and orbits at a distance of about 886 million miles (1.4 billion kilometers) from the Sun.</div>
+                        </div>
+                        <div class="box tooltip">
+                             short day/long year
+                            <div class="tooltiptext">length of year: 10759 earth days</div>
+                        </div>
+                        <div class="box tooltip">
+                             mini solar system
+                            <div class="tooltiptext">Saturn has 53 known moons with an additional nine moons awaiting confirmation of their discovery—that is a total of 62 moons</div>
+                        </div>
+                        <div class="box tooltip">
+                                type
+                                <div class="tooltiptext">Gas giant</div>
+                            </div>
+                    </div>
+                    <div id="intro-img">
+                        <img src="https://images.vexels.com/media/users/3/152609/isolated/preview/deea3e2e5e2347c0eeb98a8f65185ded-saturn-planet-icon-by-vexels.png" >
+                    </div>
+                </div>
+
+                <a href="#" onclick = "return false;" onmousedown="resetScroller('inner-bottom');">Back to main page</a>
+            </div>
+
+
+
+            <div class="background-box" id="exploration">
+                <h3>exploration</h3>
+                <div class="timeline">
+
+                    <div >
+                        <div id="significant-events">
+                        </div>
+                    </div>
+
+                </div>
+                <div id="space-craft">
+                    <div>
+                        <h3>Spacecrafts</h3>
+                        <div class="tab">
+                            <button class="tablinks" onmouseover="openImg(event,'Hubble space telescope')">Hubble space telescope</button>
+                            <button class="tablinks" onmouseover="openImg(event,'Voyager 2')">Voyager 2</button>
+                        </div>
+                        <div id="Hubble space telescope" class="tabcontent">
+                            <h3>Hubble space telescope</h3>
+                            <h4>Apr. 24, 1990: Launch</h4>
+                            <iframe src="https://solarsystem.nasa.gov/gltf_embed/2383" width="100%" height="450px" frameborder="0"></iframe>
+                            <h4>source: NASA Visualization Technology Applications and Development (VTAD)</h4>
+                        </div>
+                        <div id="Voyager 2" class="tabcontent">
+                            <h3>Voyager 2</h3>
+                            <h4>Aug. 20 1977: Launch</h4>
+                            <iframe src="https://solarsystem.nasa.gov/gltf_embed/2340" width="100%" height="450px" frameborder="0"></iframe>
+                            <h4>source: NASA Visualization Technology Applications and Development (VTAD)</h4>
+                        </div>
+                        <div class="clear-fix"></div>
+                    </div>
+                </div>
+                <a href="#" onclick = "return false;" onmousedown="resetScroller('inner-bottom');">Back to main page</a>
+
+            </div>
+
+            <div class="background-box" id="culture">
+                <h2>Culture</h2>
+                <div id="culture-img">
+                    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Polidoro_da_Caravaggio_-_Saturnus-thumb.jpg/256px-Polidoro_da_Caravaggio_-_Saturnus-thumb.jpg" alt="">
+                    <h4>The planet is named for the Roman god of agriculture and wealth, who was also the father of Jupiter.</h4>
+                </div>
+                <div id="back">
+                    <a href="#" onclick = "return false;" onmousedown="resetScroller('inner-bottom');">Back to main page</a>
+                </div>
+            </div>
+
+        <div id="contact-box">
+                <div id="contact">Contact us</div>
+
+                <div id="contactForm">
+                
+                  <h1>Keep in touch!</h1>
+                  <small>I'll get back to you as quickly as possible</small>
+                  
+                  <form action="#">
+                    <input placeholder="Name" type="text" required />
+                    <input placeholder="Email" type="email" required />
+                    <input placeholder="Subject" type="text" required />
+                    <textarea placeholder="Comment"></textarea>
+                    <input class="formBtn" type="submit" />
+                    <input class="formBtn" type="reset" />
+                  </form>
+                </div>
+                  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                
+        </div>
+            
+    
+    <script src="js/saturn.js"></script>
+</body>
+</html>

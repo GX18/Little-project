@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/asteroids.css">
+    <title>Explore Asteroids</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Indie+Flower|Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="root">
+        <div id="outer-top">
+
+            <div id="inner-top">
+                <div></div>
+                <h5>username</h5>
+                <h1>Explore Asteroids</h1>
+                <div class="inline">
+                    <span >A brief introduction to your minor planets</span>
+                    <span class="right">to the one who is kind-hearted</span>
+                </div>
+            </div>
+            <div id="inner-bottom">
+                
+                <div class="table-info" id="menu-top">
+                    <div id="menu">menu page</div>
+                    <span>01</span>
+                    <div>
+                        <button href="#" onclick = "return false;" onmousedown="autoScrollTo('box-border');" class="table">introduction</button>
+
+                    </div>
+                    <span class="paddingtop-25px">Explore</span>
+
+                </div>
+                <div class="table-info" id="menu-mid">
+                    <span class="paddingtop-25px">02</span>
+                    <div>
+                        <button href="#" onclick = "return false;" onmousedown="autoScrollTo('exploration');" class="table">exploration</button>
+
+                    </div>
+                    <span class="paddingtop-50px">read more</span>
+                </div>
+                <div class="table-info" id="menu-bot">
+                    <span class="paddingtop-25px">03</span>
+                    <div>
+                        
+                        <button href="#" onclick = "return false;" onmousedown="autoScrollTo('culture');" class="table">culture</button>
+                    </div>
+                    <span class="paddingtop-50px">read more</span>
+                </div>
+            </div>
+        </div>
+
+
+    <div id="model-3d">
+        <h3>3D model</h3>
+        <h5>source: NASA Visualization Technology Applications and Development (VTAD)</h5>
+        <div id="asteroids">
+            <div class="square">
+                <h5>4 Vesta</h5>
+                <iframe src="https://solarsystem.nasa.gov/gltf_embed/2341" width="95%" height="450px" frameborder="0"></iframe>
+            </div>
+            <div class="square">
+                    <h5>433 Eros</h5>
+                    <iframe src="https://solarsystem.nasa.gov/gltf_embed/2389" width="95%" height="450px" frameborder="0"></iframe>
+            </div>
+            <div class="square">
+                    <h5>253 Mathilde</h5>
+                    <iframe src="https://solarsystem.nasa.gov/system/content_pages/main_images/427_Mathilde1_main.jpg" width="95%" height="450px" frameborder="0"></iframe>
+            </div>        
+            
+            <div class="square">
+                    <h5>25143 Itokawa</h5>
+                    <iframe src="https://solarsystem.nasa.gov/gltf_embed/2377" width="95%" height="450px" frameborder="0"></iframe>
+            </div>
+            <div class="square">
+                    <h5>243 Ida</h5>
+                    <iframe src="https://solarsystem.nasa.gov/system/content_pages/main_images/417_Ida_Dactyl_main.jpg" width="95%" height="450px" frameborder="0"></iframe>
+            </div>
+            <div class="square">
+                    <h5>16 Psyche</h5>
+                    <iframe src="https://solarsystem.nasa.gov/system/content_pages/main_images/416_16_psyche_main.jpg" width="95%" height="450px" frameborder="0"></iframe>
+            </div>
+            <div class="square">
+                    <h5>10199 Chariklo</h5>
+                    <iframe src="https://solarsystem.nasa.gov/system/content_pages/main_images/411_10199_chariklo_main.jpg" width="95%" height="450px" frameborder="0"></iframe>
+            </div>
+            <div class="square">
+                    <h5>101955 Bennu</h5>
+                    <iframe src="https://solarsystem.nasa.gov/system/feature_items/images/260_186_bennu_carousel_5.jpg" width="95%" height="450px" frameborder="0"></iframe>
+            </div>
+
+        </div>
+    </div>
+
+</div id="background-page">
+
+<div class="background-box" id="box-border">
+    <div class="paddingleft-70px">introduciton</div>
+    <div id="introduction">
+        <div id="intro-info">
+            <div class="box tooltip">
+                    Asteroids
+                <div class="tooltiptext">minor planets, are rocky, airless remnants left over from the early formation of our solar system about 4.6 billion years ago.</div>
+            </div>
+            <div class="box tooltip">
+                    The current known asteroid count
+                <div class="tooltiptext">796,459</div>
+            </div>
+            <div class="box tooltip">
+               position
+                <div class="tooltiptext">can be found orbiting the Sun between Mars and Jupiter within the main asteroid belt</div>
+            </div>
+            <div class="box tooltip">
+                mass
+                    <div class="tooltiptext">The total mass of all the asteroids combined is less than that of Earth's Moon.</div>
+                </div>
+        </div>
+        <div id="intro-img">
+            <img src="https://cdn141.picsart.com/270681814008211.png?r480x480" >
+        </div>
+    </div>
+
+    <a href="#" onclick = "return false;" onmousedown="resetScroller('inner-bottom');">Back to main page</a>
+</div>
+
+
+
+<div class="background-box" id="exploration">
+    <h3>exploration</h3>
+    <div class="timeline">
+
+        <div >
+            <div id="significant-events">
+            </div>
+        </div>
+
+    </div>
+    <div id="space-craft">
+        <div>
+            <h3>Active Spacecrafts</h3>
+            <div class="tab">
+                <button class="tablinks" onmouseover="openImg(event,'OSIRIS-REx')">OSIRIS-REx</button>
+                <button class="tablinks" onmouseover="openImg(event,'WISE/NEOWISE')">WISE/NEOWISE</button>
+                <button class="tablinks" onmouseover="openImg(event,'Hubble Space Telescope')">Hubble Space Telescope</button>
+            </div>
+            <div id="OSIRIS-REx" class="tabcontent">
+                <h3>OSIRIS-REx</h3>
+                <h4>Sep 8, 2016: Launch</h4>
+                <iframe src="https://solarsystem.nasa.gov/gltf_embed/2360" width="100%" height="450px" frameborder="0"></iframe>
+                <h4>source: NASA Visualization Technology Applications and Development (VTAD)</h4>
+            </div>
+            <div id="WISE/NEOWISE" class="tabcontent">
+                <h3>WISE/NEOWISE</h3>
+                <h4>Dec. 14, 2009: Launch</h4>
+                <img src="http://sarisky.ir/wp-content/uploads/2013/08/shekarchi-sayarak.jpg" alt="">
+                <h4>source: NASA Visualization Technology Applications and Development (VTAD)</h4>
+            </div>
+            <div id="Hubble Space Telescope" class="tabcontent">
+                <h3>Hubble Space Telescope</h3>
+                <h4>Apr. 24, 1990: Launch</h4>
+                <iframe src="https://solarsystem.nasa.gov/gltf_embed/2383" width="100%" height="450px" frameborder="0"></iframe>
+                <h4>source: NASA Visualization Technology Applications and Development (VTAD)</h4>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+    <a href="#" onclick = "return false;" onmousedown="resetScroller('inner-bottom');">Back to main page</a>
+
+</div>
+
+<div class="background-box" id="culture">
+    <h2>Culture</h2>
+    <div id="culture-img">
+        <h3>How Asteroids Get Their Names</h3>
+        <h4>The International Astronomical Union's Committee on Small Body Nomenclature.is a little less strict when it comes to naming asteroids than other IAU naming committees. So out there orbiting the sun we have giant space rocks named for Mr. Spock (a cat named for the character of "Star Trek" fame), rock musician Frank Zappa, beloved teachers such as Florida’s Cynthia L. Reyes, and more somber tributes such as the seven asteroids named for the crew of the Space Shuttle Columbia killed in 2003. Asteroids are also named for places and a variety of other things. (The IAU discourages naming asteroids for pets, so Mr. Spock stands alone).
+                Asteroids are also given a number, for example (99942) Apophis. The Harvard Smithsonian Center for Astrophysics keeps a fairly current list of asteroid names.</h4>
+    </div>
+    <div id="back">
+        <a href="#" onclick = "return false;" onmousedown="resetScroller('inner-bottom');">Back to main page</a>
+    </div>
+</div>
+
+<div id="contact-box">
+    <div id="contact">Contact us</div>
+
+    <div id="contactForm">
+    
+      <h1>Keep in touch!</h1>
+      <small>I'll get back to you as quickly as possible</small>
+      
+      <form action="#">
+        <input placeholder="Name" type="text" required />
+        <input placeholder="Email" type="email" required />
+        <input placeholder="Subject" type="text" required />
+        <textarea placeholder="Comment"></textarea>
+        <input class="formBtn" type="submit" />
+        <input class="formBtn" type="reset" />
+      </form>
+    </div>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    
+</div>
+
+
+<script src="js/asteroids.js"></script>
+</body>
+</html>

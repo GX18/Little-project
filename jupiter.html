@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/jupiter.css">
+    <title>Explore Jupiter</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Indie+Flower|Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="root">
+        <div id="outer-top">
+
+            <div id="inner-top">
+                <div></div>
+                <h5>username</h5>
+                <h1>Explore Jupiter</h1>
+                <div class="inline">
+                    <span >A brief introduction to your planet</span>
+                    <span class="right">to the one who is kind-hearted</span>
+                </div>
+            </div>
+            <div id="inner-bottom">
+                
+                <div class="table-info" id="menu-top">
+                    <div id="menu">menu page</div>
+                    <span>01</span>
+                    <div>
+                        <button href="#" onclick = "return false;" onmousedown="autoScrollTo('box-border');" class="table">introduction</button>
+
+                    </div>
+                    <span class="paddingtop-25px">Explore</span>
+
+                </div>
+                <div class="table-info" id="menu-mid">
+                    <span class="paddingtop-25px">02</span>
+                    <div>
+                        <button href="#" onclick = "return false;" onmousedown="autoScrollTo('exploration');" class="table">exploration</button>
+
+                    </div>
+                    <span class="paddingtop-50px">read more</span>
+                </div>
+                <div class="table-info" id="menu-bot">
+                    <span class="paddingtop-25px">03</span>
+                    <div>
+                        
+                        <button href="#" onclick = "return false;" onmousedown="autoScrollTo('culture');" class="table">culture</button>
+                    </div>
+                    <span class="paddingtop-50px">read more</span>
+                </div>
+            </div>
+        </div>
+
+
+    <div id="model-3d">
+        <h3>3D model</h3>
+        <iframe src="https://solarsystem.nasa.gov/gltf_embed/2375" width="90%" height="450px" frameborder="0"></iframe>
+        <h4>source: NASA Visualization Technology Applications and Development (VTAD)</h4>
+    </div>
+
+        </div id="background-page">
+
+            <div class="background-box" id="box-border">
+                <div class="paddingleft-70px">introduciton</div>
+                <div id="introduction">
+                    <div id="intro-info">
+                        <div class="box tooltip">
+                            the grandest planet
+                            <div class="tooltiptext">Eleven Earths could fit across Jupiter’s equator. If Earth were the size of a grape, Jupiter would be the size of a basketball.</div>
+                        </div>
+                        <div class="box tooltip">
+                            short day/long year
+                            <div class="tooltiptext">length of year: 4333 earth years</div>
+                        </div>
+                        <div class="box tooltip">
+                            world's galore
+                            <div class="tooltiptext">Jupiter has more than 75 moons.</div>
+                        </div>
+                        <div class="box tooltip">
+                                type
+                                <div class="tooltiptext">Gas giant</div>
+                            </div>
+                    </div>
+                    <div id="intro-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Jupiter_%28transparent%29.png" >
+                    </div>
+                </div>
+
+                <a href="#" onclick = "return false;" onmousedown="resetScroller('inner-bottom');">Back to main page</a>
+            </div>
+
+
+
+            <div class="background-box" id="exploration">
+                <h3>exploration</h3>
+                <div class="timeline">
+
+                    <div >
+                        <div id="significant-events">
+                        </div>
+                    </div>
+
+                </div>
+                <div id="space-craft">
+                    <div>
+                        <h3>Spacecrafts</h3>
+                        <div class="tab">
+                            <button class="tablinks" onmouseover="openImg(event,'Juno')">Juno</button>
+                            <button class="tablinks" onmouseover="openImg(event,'Hubble space telescope')">Hubble space telescope</button>
+                            <button class="tablinks" onmouseover="openImg(event,'Voyager 2')">Voyager 2</button>
+                        </div>
+                        <div id="Juno" class="tabcontent">
+                            <h3>Juno</h3>
+                            <h4>Aug. 5, 2011: Launch</h4>
+                            <iframe src="https://solarsystem.nasa.gov/gltf_embed/2376" width="100%" height="450px" frameborder="0"></iframe>
+                            <h4>source: NASA Visualization Technology Applications and Development (VTAD)</h4>
+                        </div>
+                        <div id="Hubble space telescope" class="tabcontent">
+                            <h3>Hubble space telescope</h3>
+                            <h4>Apr. 24, 1990: Launch</h4>
+                            <iframe src="https://solarsystem.nasa.gov/gltf_embed/2383" width="100%" height="450px" frameborder="0"></iframe>
+                            <h4>source: NASA Visualization Technology Applications and Development (VTAD)</h4>
+                        </div>
+                        <div id="Voyager 2" class="tabcontent">
+                            <h3>Voyager 2</h3>
+                            <h4>Aug. 20 1977: Launch</h4>
+                            <iframe src="https://solarsystem.nasa.gov/gltf_embed/2340" width="100%" height="450px" frameborder="0"></iframe>
+                            <h4>source: NASA Visualization Technology Applications and Development (VTAD)</h4>
+                        </div>
+                        <div class="clear-fix"></div>
+                    </div>
+                </div>
+                <a href="#" onclick = "return false;" onmousedown="resetScroller('inner-bottom');">Back to main page</a>
+
+            </div>
+
+            <div class="background-box" id="culture">
+                <h2>Culture</h2>
+                <div id="culture-img">
+                    <img src="https://scontent-lhr3-1.cdninstagram.com/vp/52e973d86b2528e63de207bf0e4b7f74/5DEECC3D/t51.2885-15/e35/60640184_833245327051074_6509861527309678055_n.jpg?_nc_ht=scontent-lhr3-1.cdninstagram.com&ig_cache_key=MjA1ODE3NjQ4MTM0NDgxNjcyMA%3D%3D.2" alt="">
+                    <h4>Jupiter is named for the king of the ancient Roman gods.</h4>
+                </div>
+                <div id="back">
+                    <a href="#" onclick = "return false;" onmousedown="resetScroller('inner-bottom');">Back to main page</a>
+                </div>
+            </div>
+
+        <div id="contact-box">
+                <div id="contact">Contact us</div>
+
+                <div id="contactForm">
+                
+                  <h1>Keep in touch!</h1>
+                  <small>I'll get back to you as quickly as possible</small>
+                  
+                  <form action="#">
+                    <input placeholder="Name" type="text" required />
+                    <input placeholder="Email" type="email" required />
+                    <input placeholder="Subject" type="text" required />
+                    <textarea placeholder="Comment"></textarea>
+                    <input class="formBtn" type="submit" />
+                    <input class="formBtn" type="reset" />
+                  </form>
+                </div>
+                  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                
+        </div>
+            
+    
+    <script src="js/jupiter.js"></script>
+</body>
+</html>
