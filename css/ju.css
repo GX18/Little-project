@@ -9,10 +9,9 @@ body {
     left: 0;
     width: 100%;
     height: 50px;
-    background: #808080;
+    background: #8B4513;
     z-index: 5;
-    box-shadow: 0 0 3px 3px #808080;
-    overflow: hidden;
+    box-shadow: 0 0 3px 3px #8B4513;
   }
   .nav a {
     float: left;
@@ -44,13 +43,13 @@ body {
     background-position: center;
   }
   .fixed-bg .img#bg-1 {
-    background-image: url(https://images.unsplash.com/photo-1561706232-dc4dd6fbd2c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1652&q=80);
+    background-image: url(https://images.unsplash.com/photo-1493243350443-9e3048ce7288?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1797&q=80);
   }
   .fixed-bg .img#bg-2 {
-    background-image: url(https://images.unsplash.com/photo-1519112401822-faef40980d8e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80);
+    background-image: url(https://images.unsplash.com/photo-1514626760816-e21e9afa87db?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
   }
   .fixed-bg .img#bg-3 {
-    background-image: url(https://images.unsplash.com/photo-1512987415479-85f370bca602?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+    background-image: url(https://images.unsplash.com/photo-1431440869543-efaf3388c585?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
   }
   .fixed-bg .img.visible {
     opacity: 1;
@@ -59,7 +58,7 @@ body {
   .hero {
     width: 100%;
     height: 80vh;
-    background: url(https://images.unsplash.com/photo-1505629557752-b84ec6489bef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80) center;
+    background: url(https://images.unsplash.com/photo-1475727946784-2890c8fdb9c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1662&q=80) center;
     position: relative;
     text-align: center;
     background-attachment: fixed;
@@ -84,36 +83,36 @@ body {
   }
   
   .features {
-    background: #808080 ;
+    background: #8B4513 ;
     background-size: 50%;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
   }      
   
   #image1 {
-    background-image: url(http://www.clker.com/cliparts/3/2/4/d/11949892062120266900moon01.svg.med.png);
-    height: 390px;
-    background-repeat: no-repeat;
-    background-size: 130px;
-    background-position-x: 23%;
-    background-position-y: 150px;
-  }
-  
-  #image2 {
-    background-image: url(http://www.clker.com/cliparts/w/M/G/E/c/F/hand-shake-md.png);
+    background-image: url(http://www.clker.com/cliparts/Y/f/k/x/D/B/dolphin-fish-md.png);
     height: 390px;
     background-repeat: no-repeat;
     background-size: 170px;
-    background-position-x: 55%;
+    background-position-x: 20%;
+    background-position-y: 190px;
+  }
+  
+  #image2 {
+    background-image: url(http://www.clker.com/cliparts/7/6/c/a/11949843441487380965mountain_seal_mitchell_j_.svg.med.png);
+    height: 390px;
+    background-repeat: no-repeat;
+    background-size: 170px;
+    background-position-x: 51%;
     background-position-y: 170px;
   }
   
   #image3 {
-    background-image: url(http://www.clker.com/cliparts/9/0/0/f/1244328017133329587owl-moon.svg.med.png);
+    background-image: url(http://www.clker.com/cliparts/2/d/e/e/119498531430443376orme_sulla_neve_architet_01.svg.med.png);
     height: 390px;
     background-repeat: no-repeat;
-    background-size: 170px;
-    background-position-x: 87%;
-    background-position-y: 140px;
+    background-size: 150px;
+    background-position-x: 83%;
+    background-position-y: 160px;
   }
   
   
@@ -277,4 +276,64 @@ body {
     background-size: 170px;
     background-position-x: 83%;
     background-position-y: 170px;
+  }
+
+  #planet {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+  }
+
+  #person {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 50px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 1;
+    font-size: 1.5rem;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
   }

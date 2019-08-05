@@ -12,7 +12,6 @@ body {
     background: #006633;
     z-index: 5;
     box-shadow: 0 0 3px 3px #006633;
-    overflow: hidden;
   }
   .nav a {
     float: left;
@@ -23,7 +22,6 @@ body {
     font-size: 20px;
     font-family: 'Courgette', cursive;
   }
-  
   .fixed-bg {
     width: 100vw;
     height: 100vh;
@@ -60,6 +58,7 @@ body {
     width: 100%;
     height: 80vh;
     background: url(https://images.unsplash.com/photo-1453791052107-5c843da62d97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80) center;
+    
     position: relative;
     text-align: center;
     background-attachment: fixed;
@@ -99,10 +98,10 @@ body {
   }
   
   #image2 {
-    background-image: url(http://www.clker.com/cliparts/w/M/G/E/c/F/hand-shake-md.png);
+    background-image: url(http://www.clker.com/cliparts/5/c/6/f/11949866531015041264harp_mo_01.svg.med.png);
     height: 390px;
     background-repeat: no-repeat;
-    background-size: 170px;
+    background-size: 120px;
     background-position-x: 51%;
     background-position-y: 170px;
   }
@@ -277,4 +276,65 @@ body {
     background-size: 170px;
     background-position-x: 83%;
     background-position-y: 170px;
+  }
+
+
+  #planet {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+  }
+
+  #person {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 50px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 1;
+    font-size: 1.5rem;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
   }
