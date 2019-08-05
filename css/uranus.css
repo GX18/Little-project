@@ -166,6 +166,7 @@
     #inner-top a {
         margin-top: 20px;
         font-family: 'Indie Flower', cursive;
+        color: #ccc;
     }
     #inner-top a:hover{
         text-decoration: underline;
