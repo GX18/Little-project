@@ -5,6 +5,7 @@ data = [
         a2: "Air",
         a3: "Earth",
         a4: "Water",
+        imgSrc: "https://images.unsplash.com/photo-1496347315686-5f274d046ccc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
     },
 
     {
