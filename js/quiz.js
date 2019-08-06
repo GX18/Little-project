@@ -80,14 +80,46 @@ function Slide(id) {
 
 
 new Slide('slide');
-
-document.getElementById("anwser").addEventListener("click", () => {
+var Score = 0;
+document.getElementById("anwser").addEventListener("click", (e) => {
 if (currentQuestion<data.length) {
+  if (e.target.innerHTML==data[currentQuestion].a1) {
+    Score= Score + 48;
+  } else if (e.target.innerHTML==data[currentQuestion].a2) {
+    Score = Score + 36;
+  } else if (e.target.innerHTML==data[currentQuestion].a3) {
+    Score = Score + 24;
+  } else if (e.target.innerHTML==data[currentQuestion].a4) {
+    Score = Score + 12;
+  }
   ++currentQuestion;
   render(data[currentQuestion].question, data[currentQuestion]["a1"],0);
 } else {
-  var htmlArray = ["ear.html","ju.html", "mer.html", "mo.html", "nep.html", "personality.html", "plu.html", "sunny.html", "ven.html", "sa.html", "ura.html", "roid.html"];
-  var rand = htmlArray[Math.floor(Math.random() * htmlArray.length)];
-  location.href = rand;
+    if (Score>=180&&Score<225) {
+      location.href  = "";
+    } else if (Score>=225&&Score<270) {
+      location.href = "";
+    }  else if (Score>=270&&Score<315) {
+      location.href = "";
+    } else if (Score>=315&&Score<360) {
+      location.href = "";
+    } else if (Score>=360&&Score<405) {
+      location.href = "";
+    } else if (Score>=405&&Score<450) {
+      location.href = "";
+    } else if (Score>=450&&Score<495) {
+      location.href = "";
+    }else if (Score>=495&&Score<540) {
+      location.href = "";
+    }else if (Score>=540&&Score<585) {
+      location.href = "";
+    } else if (Score>=585&&Score<630) {
+      location.href = "";
+    } else if (Score>=630&&Score<675) {
+      location.href = "";
+    } else if (Score>=675&&Score<720) {
+      location.href = "";
+    }
+    
 }
 })
