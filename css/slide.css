@@ -1,0 +1,90 @@
+.slide-wrapper {
+    background: url("http://54.68.45.45/sites/default/files/mountains.jpg") no-repeat center center transparent;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 50rem;
+    max-width: 1075px;
+    position: relative;
+}
+
+.slide-wrapper::before {
+    display: block;
+    mix-blend-mode: multiply;
+    position: absolute;
+    z-index: 2; 
+}
+
+.slide-wrapper::after {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 1s ease 0s;
+    width: 100%;
+}
+
+.slide-wrapper .slide-text {
+    bottom: 60px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 1.5rem;
+    left: 0;
+    line-height: 2.8rem;
+    padding: 0 8rem;
+    position: absolute;
+    transition: top 0.35s ease 0s;
+    width: 100%;
+    z-index: 2;
+}
+
+.slide-wrapper .slide-text .slide-heading {
+    text-transform: uppercase;
+}
+
+.slide-wrapper .slide-text .slide-body {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 1.5s ease 0s;
+}
+
+.slide-wrapper .slide-text h2 {
+    color: #fff;
+    font-size: 3.8rem;
+    line-height: 4.5rem;
+    margin: 0 0 10px;
+    padding: 3px 0 0 0;
+    text-transform: none;
+}
+
+.slide-wrapper .slide-text p:last-child {
+    margin-bottom: 0;
+}
+.slide-wrapper .slide-text a {
+    color: #fff;
+}
+
+.slide-wrapper .slide-text a.button {
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    padding: 0.8rem 2.3rem;
+    text-decoration: none;
+}
+
+.slide-wrapper .slide-text a.button:active, .slide-wrapper .slide-text a.button:focus, .slide-wrapper .slide-text a.button:hover {
+    color: #ff3233;
+}
+.slide-wrapper:hover::after {
+    opacity: 1;
+}
+.slide-wrapper:hover .slide-body {
+    max-height: 660px;
+    opacity: 1;
+}

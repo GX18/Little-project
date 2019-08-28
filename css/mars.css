@@ -400,7 +400,6 @@ button {
 /* exploration */
 
 .timeline {
-    width: 100%;
     display: block;
     float: left;
 }
@@ -593,24 +592,25 @@ button {
     border-radius: 20px;
     height: 800px;
     background-attachment: cover;
-    background-image: url(https://images.pexels.com/photos/815883/pexels-photo-815883.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-image: url(https://images.pexels.com/photos/2825240/pexels-photo-2825240.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-repeat: no-repeat;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-}
-
-#culture:hover {
     opacity: 0.9;
     filter: alpha(opacity=90);
 }
+
+/* #culture:hover {
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+} */
 
 #culture h2 {
     height: 50px;
     font-size: 2rem;
     text-transform: uppercase;
-    padding: 40px 0px 45px 70px;
+    padding: 40px 0px 45px 40px;
     color: white;
     margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 #culture-img {
@@ -636,16 +636,16 @@ button {
 }
 
 #back {
-    margin-top: 10px;
-    padding: 20px;
+    /* margin-top: 10px; */
+    padding: 5px 20px 5px 0px;
     text-align: right;
-}
+};
 
 #back a {
     color: white;
     padding-right: 20px;
     font-size: 1.5rem;
-}
+};
 
 /* contact */
 

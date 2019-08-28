@@ -94,31 +94,32 @@ if (currentQuestion<data.length) {
   }
   ++currentQuestion;
   render(data[currentQuestion].question, data[currentQuestion]["a1"],0);
+  console.log(Score);
 } else {
     if (Score>=180&&Score<225) {
-      location.href  = "";
+      location.href  = "roid.html";
     } else if (Score>=225&&Score<270) {
-      location.href = "";
+      location.href = "plu.html";
     }  else if (Score>=270&&Score<315) {
-      location.href = "";
+      location.href = "sa.html";
     } else if (Score>=315&&Score<360) {
-      location.href = "";
+      location.href = "ura.html";
     } else if (Score>=360&&Score<405) {
-      location.href = "";
+      location.href = "mo.html";
     } else if (Score>=405&&Score<450) {
-      location.href = "";
+      location.href = "nep.html";
     } else if (Score>=450&&Score<495) {
-      location.href = "";
+      location.href = "ear.html";
     }else if (Score>=495&&Score<540) {
-      location.href = "";
+      location.href = "ju.html";
     }else if (Score>=540&&Score<585) {
-      location.href = "";
+      location.href = "mer.html";
     } else if (Score>=585&&Score<630) {
-      location.href = "";
+      location.href = "ven.html";
     } else if (Score>=630&&Score<675) {
-      location.href = "";
+      location.href = "personality.html";
     } else if (Score>=675&&Score<720) {
-      location.href = "";
+      location.href = "sunny.html";
     }
     
 }

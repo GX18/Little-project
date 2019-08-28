@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/sun.css">
+    <link rel="stylesheet" href="css/slide.css">
     <title>Explore The Sun</title>
     <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Indie+Flower|Work+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
@@ -57,8 +58,15 @@
 
     <div id="model-3d">
         <h3>3D model</h3>
-        <iframe src="https://solarsystem.nasa.gov/gltf_embed/2352" width="90%" height="450px" frameborder="0"></iframe>
-        <h4>source: NASA Visualization Technology Applications and Development (VTAD)</h4>
+        <div class="sketchfab-embed-wrapper">
+            <iframe title="A 3D model" width="95%" height="480" src="https://sketchfab.com/models/9ef1c68fbb944147bcfcc891d3912645/embed?autospin=0.2&amp;autostart=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        
+        <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+            <a href="https://sketchfab.com/3d-models/sun-9ef1c68fbb944147bcfcc891d3912645?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sun</a>
+            by <a href="https://sketchfab.com/SebastianSosnowski?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">SebastianSosnowski</a>
+            on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+        </p>
+        </div>
     </div>
 
         </div id="background-page">
@@ -113,8 +121,7 @@
                         <div id="Parker Solar Probe" class="tabcontent">
                             <h3>Parker Solar Probe</h3>
                             <h4>Aug. 12, 2018: Launch</h4>
-                            <iframe src="https://solarsystem.nasa.gov/gltf_embed/2356" width="100%" height="450px" frameborder="0"></iframe>
-                            <h4>source: NASA Visualization Technology Applications and Development (VTAD)</h4>
+                            <img src="http://dailyvorerpata.com/uploads/c9d253e097671655510489b3f8657eb8dbf15919970684a2e14de4cc0963fdce_3966955.jpg" alt="">
                         </div>
                         <div class="clear-fix"></div>
                     </div>
@@ -124,14 +131,17 @@
             </div>
 
             <div class="background-box" id="culture">
-                <h2>Culture</h2>
-                <div id="culture-img">
-                    <img src="http://cfile235.uf.daum.net/image/99B3D9405B88EC29277A17" alt="">
-                    <h4>The Sun has many names in many cultures. The Latin word for Sun is “sol”, which is the main adjective for all things Sun-related: solar. Sun is also the simbol of Apollo, god of the Sun in Greek culture</h4>
-                </div>
-                <div id="back">
-                    <a href="#" onclick = "return false;" onmousedown="resetScroller('inner-bottom');">Back to main page</a>
-                </div>
+
+                <div class="slide-wrapper">
+                        <div class="slide-text">
+                          <div class="slide-heading">Culture</div>
+                            <h2 class="slideshow-title">Behind the Names</h2>
+                            <div class="slide-body">
+                                <img src="http://cfile235.uf.daum.net/image/99B3D9405B88EC29277A17" alt="">
+                              <p>The Sun has many names in many cultures. The Latin word for Sun is “sol”, which is the main adjective for all things Sun-related: solar. Sun is also the simbol of Apollo, god of the Sun in Greek culture</p>
+                            </div>
+                          </div>
+                        </div>
             </div>
 
         <div id="contact-box">

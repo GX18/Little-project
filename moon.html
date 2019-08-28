@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/moon.css">
+    <link rel="stylesheet" href="css/slide.css">
     <title>Explore The Moon</title>
     <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Indie+Flower|Work+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
@@ -57,8 +58,15 @@
 
     <div id="model-3d">
         <h3>3D model</h3>
-        <iframe src="https://solarsystem.nasa.gov/gltf_embed/2366" width="90%" height="450px" frameborder="0"></iframe>
-        <h4>source: NASA Visualization Technology Applications and Development (VTAD)</h4>
+        <div class="sketchfab-embed-wrapper">
+            <iframe title="A 3D model" width="95%" height="480" src="https://sketchfab.com/models/870de693475d436c8e925ab0bcda4ca4/embed?autospin=0.2&amp;autostart=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        
+        <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+            <a href="https://sketchfab.com/3d-models/moon-870de693475d436c8e925ab0bcda4ca4?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Moon</a>
+            by <a href="https://sketchfab.com/miekeroth?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Mieke Roth</a>
+            on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+        </p>
+        </div>
     </div>
 
         </div id="background-page">
@@ -131,14 +139,16 @@
             </div>
 
             <div class="background-box" id="culture">
-                <h2>Culture</h2>
-                <div id="culture-img">
-                    <img src="http://www.jannonce.co.il/wp-content/uploads/2019/04/lune.jpg" alt="">
-                    <h4>Earth's only natural satellite is simply called "the Moon" because people didn't know other moons existed until Galileo Galilei discovered four moons orbiting Jupiter in 1610. In Latin, the Moon was called Luna, which is the main adjective for all things Moon-related: lunar.</h4>
-                </div>
-                <div id="back">
-                    <a href="#" onclick = "return false;" onmousedown="resetScroller('inner-bottom');">Back to main page</a>
-                </div>
+                 <div class="slide-wrapper">
+                        <div class="slide-text">
+                          <div class="slide-heading">Culture</div>
+                            <h2 class="slideshow-title">Behind the Names</h2>
+                            <div class="slide-body">
+                                <img src="http://www.jannonce.co.il/wp-content/uploads/2019/04/lune.jpg" alt="">
+                              <p>Earth's only natural satellite is simply called "the Moon" because people didn't know other moons existed until Galileo Galilei discovered four moons orbiting Jupiter in 1610. In Latin, the Moon was called Luna, which is the main adjective for all things Moon-related: lunar.</p>
+                            </div>
+                          </div>
+                        </div>
             </div>
 
         <div id="contact-box">

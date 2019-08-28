@@ -570,28 +570,27 @@
 
   /* culture */
 
-#culture {
+  #culture {
     margin: 300px 0px 200px 135px;
     width: 80%;
     border-radius: 20px;
     height: 800px;
     background-attachment: cover;
-    background-image: url(https://images.pexels.com/photos/815883/pexels-photo-815883.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-image: url(https://images.pexels.com/photos/2825240/pexels-photo-2825240.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-repeat: no-repeat;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-}
-
-#culture:hover {
     opacity: 0.9;
     filter: alpha(opacity=90);
 }
 
+/* #culture:hover {
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+} */
 #culture h2{
     height: 50px;
     font-size: 2rem;
     text-transform: uppercase;
-    padding: 40px 0px 45px 70px;
+    padding: 20px 0px 70px 0px;
     color: white;
     margin-top: 40px;
 }
