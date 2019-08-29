@@ -117,7 +117,6 @@ data = [
         a4: "The potion that give you wisdom",
         imgSrc: "https://images.unsplash.com/photo-1546201483-8886694038aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
     },
-
     {
         question: "What is your favourite weather?",
         a1: "Sunny",
@@ -126,5 +125,4 @@ data = [
         a4: "Rainy",
         imgSrc: "https://images.unsplash.com/photo-1529281528138-fbe93b7d25a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1338&q=80",
     },
-    
 ]

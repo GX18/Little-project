@@ -5,16 +5,16 @@ function render(question, anwser, child) {
   console.log(currentIMG)
   document.getElementById("slide").style.backgroundImage = `url(${currentIMG})`;
   document.getElementById("anwser").innerHTML = anwser;
-  if(child==0){
+  if (child == 0) {
     document.getElementById("slide-item").style.backgroundImage = "linear-gradient(to right top, #ffb88a, #fc9f6e, #fa8456, #f66542, #f23e33)";
-  } else if (child==1) {
+  } else if (child == 1) {
     document.getElementById("slide-item").style.backgroundImage = "linear-gradient(to right top, #3a70bb, #3f63bf, #5153bf, #673fb9, #7e1bae)";
-  } else if(child==2){
+  } else if (child == 2) {
     document.getElementById("slide-item").style.backgroundImage = "linear-gradient(to right top, #9accff, #a2c2f3, #a8b9e6, #aab0d8, #aba8ca)";
-    
-  } else if(child==3) {
+
+  } else if (child == 3) {
     document.getElementById("slide-item").style.backgroundImage = "linear-gradient(to right top, #514e1d, #5e6521, #667d27, #699632, #65b142)";
-  } else if(child==4) {
+  } else if (child == 4) {
     document.getElementById("slide-item").style.backgroundImage = "linear-gradient(to right top, #8cc4fe, #4ea2ff, #007dff, #0054f6, #2913e1)";
   }
 }
@@ -27,7 +27,7 @@ function Slide(id) {
 
   function init() {
     buildDots();
-    render(data[currentQuestion].question, data[currentQuestion]["a1"],0)
+    render(data[currentQuestion].question, data[currentQuestion]["a1"], 0)
     bindEvents();
   }
 
@@ -68,7 +68,7 @@ function Slide(id) {
       item.addEventListener('click', e => {
         e.preventDefault();
         setActive(dots, index);
-        render(data[currentQuestion].question, data[currentQuestion][`a${index + 1}`], index+1)
+        render(data[currentQuestion].question, data[currentQuestion][`a${index + 1}`], index + 1)
       });
     });
   }
@@ -81,46 +81,52 @@ function Slide(id) {
 
 new Slide('slide');
 var Score = 0;
+
+
 document.getElementById("anwser").addEventListener("click", (e) => {
-if (currentQuestion<data.length) {
-  if (e.target.innerHTML==data[currentQuestion].a1) {
-    Score= Score + 48;
-  } else if (e.target.innerHTML==data[currentQuestion].a2) {
+
+  if (e.target.innerHTML == data[currentQuestion].a1) {
+    Score = Score + 48;
+  } else if (e.target.innerHTML == data[currentQuestion].a2) {
     Score = Score + 36;
-  } else if (e.target.innerHTML==data[currentQuestion].a3) {
+  } else if (e.target.innerHTML == data[currentQuestion].a3) {
     Score = Score + 24;
-  } else if (e.target.innerHTML==data[currentQuestion].a4) {
+  } else if (e.target.innerHTML == data[currentQuestion].a4) {
     Score = Score + 12;
   }
-  ++currentQuestion;
-  render(data[currentQuestion].question, data[currentQuestion]["a1"],0);
-  console.log(Score);
-} else {
-    if (Score>=180&&Score<225) {
-      location.href  = "roid.html";
-    } else if (Score>=225&&Score<270) {
+  if (currentQuestion < data.length - 1) {
+    ++currentQuestion;
+    console.log(Score)
+    // console.warn(`question ${currentQuestion}`);
+    // console.error(`Score ${Score}`)
+    render(data[currentQuestion].question, data[currentQuestion]["a1"], 0);
+  }
+  else {
+    if (Score >= 180 && Score < 225) {
+      location.href = "roid.html";
+    } else if (Score >= 225 && Score < 270) {
       location.href = "plu.html";
-    }  else if (Score>=270&&Score<315) {
+    } else if (Score >= 270 && Score < 315) {
       location.href = "sa.html";
-    } else if (Score>=315&&Score<360) {
+    } else if (Score >= 315 && Score < 360) {
       location.href = "ura.html";
-    } else if (Score>=360&&Score<405) {
+    } else if (Score >= 360 && Score < 405) {
       location.href = "mo.html";
-    } else if (Score>=405&&Score<450) {
+    } else if (Score >= 405 && Score < 450) {
       location.href = "nep.html";
-    } else if (Score>=450&&Score<495) {
+    } else if (Score >= 450 && Score < 495) {
       location.href = "ear.html";
-    }else if (Score>=495&&Score<540) {
+    } else if (Score >= 495 && Score < 540) {
       location.href = "ju.html";
-    }else if (Score>=540&&Score<585) {
+    } else if (Score >= 540 && Score < 585) {
       location.href = "mer.html";
-    } else if (Score>=585&&Score<630) {
+    } else if (Score >= 585 && Score < 630) {
       location.href = "ven.html";
-    } else if (Score>=630&&Score<675) {
+    } else if (Score >= 630 && Score < 675) {
       location.href = "personality.html";
-    } else if (Score>=675&&Score<720) {
-      location.href = "sunny.html";
+    } else if (Score >= 675 && Score <=720) {
+      location.href = "sunny.html"
     }
-    
-}
+
+  }
 })
